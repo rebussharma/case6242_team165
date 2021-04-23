@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>CSE 6242 Team 165 Project</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        
+    </head>
+
+    <body>
+        <div class='nav_container' id="homeID">
+            <div class='nav_bar'>
+            <div class="menu">
+                <a href="#contactID">Contact Us</a>
+                <a href="#teamID">Team</a>
+                <a href="#aboutID">About</a>
+                <a href="#dashboardID">Dashboard</a>
+                <a class="active" href="#homeID">Home</a>
+              </div>
+            </div>
+        </div>
+        
+        <div class='intro'>
+            <h2> Impact of Covid-19 on Mobility, Air Traffic and Automobile Accidents</h2>
+            <h3> Team165, CSE 6242: Data and Visual Analytics</h3>
+            <p> Following dashbord is the interactive visualization prepared on tableau. </br>
+                The dashboard explores the relationsip between covid-19 cases and human mobility, air traffic flow and automobile accidents. </br>
+                Read further below at the about section on our motivation, data, sources and experiments.</br>
+                The dashboard is also directly available at <a href="https://public.tableau.com/profile/brett.durborow#!/vizhome/6242CovidProject/Country" target="_blank">Tableau public</a>.
+                 </p>
+        </div>
+
+
+        <div class='dashboard' id="dashboardID">
+                            
+            <div class='instr'>
+                <h4> Instruction to Use the Dashboard</h4>
+                <p> Instruction below will provide a smooth guide to operate this dashboard</p>
+                <ol>
+                    <li> Situated at the center of the dashbord is the map of US</li>
+                    <li> Map Navigation</li>
+                        <ul>
+                            <li>
+                                Hover over the map to see details of each state
+                            </li>
+                            <li>
+                                Click on a state to see the state's county level view
+                            </li>
+                            <li>
+                                Hover over county to see details of county
+                            </li>
+                            <li>
+                                To reset the map or get out of current view simply click 'Go Back to US View' on top left corner
+                            </li>
+                            <li>
+                                The map has zoom/in and out properties as well
+                            </li>
+                        </ul>
+                    <li>
+                        Comprehensive Information Box
+                    </li>
+                        <ul>
+                            <li>
+                                Located right on top of US map
+                            </li>
+                            <li>
+                                Provides comprehensive total of covid cases, accidents, flights and movility index for the US by default
+                            </li>
+                            <li>
+                                View changes to state-wise data when clicked on a state.
+                            </li>
+                        </ul>
+                    <li>
+                        Metric Trend Box
+                    </li>
+                        <ul>
+                            <li>
+                                Located to the left of US view
+                            </li>
+                            <li>
+                                Provides trend-lines of metrics for US by default
+                            </li>
+                            <li>
+                                Trend-lines changes to state when clicked on a state
+                            </li>
+                        </ul>
+                    <li>
+                        Experiments
+                    </li>
+                        <ul>
+                            <li> Located at the bottom of Dashboard</li>
+                            <li> This view shows the Regression Analysis done with 2 weeks lag period</li>
+                            <li> The metrics to determine relationship and statistical significance were Beta, Correlation, R-Squared, T-Test and P-values </li>
+                        </ul>
+                    <li>
+                        Navigator and Legend
+                    </li>
+                        <ul>
+                            <li>
+                                Located to the right of the map
+                            </li>
+                            <li>
+                                Click on the date bar to select date to view the map for.
+                            </li>
+                            <li> To automatically play/stop map from start date to end date, click on the play/stop icon.</li>
+                        </ul>
+
+                </ol>
+            </div>
+            <div class='tableauPlaceholder' id='viz1618577464064'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Country ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;62&#47;6242CovidProject&#47;Country&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='6242CovidProject&#47;Country' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;62&#47;6242CovidProject&#47;Country&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en' />
+                </object>
+            </div>                     
+        </div>
+
+        <div class="about" id="aboutID">
+            <h3> About the Project</h3>
+            <p>
+                Its been alomst more than 1 and a half years the novel covid-19 virus discovered.
+                Its outbreak has made some serious impacts on all aspects of life, countless infections and numerous deaths.</br>
+                To mititgate the risk multiple cautions and restricitions have been placed.
+                We the members of team165 wanted to see if there was any relationsip between human mobility and the rise and fall of covid-19 cases.
+                Our solution was to build a visualization for the relationsip Analysis
+                The Analysis we belive would tell us if increase or decrease in covid cases had any effect on flights, mobility and automobile accidents.
+                For our experiment we did extensive research for reliable data.
+                We used <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data" target="_blank">John Hopkins University's covid-19 database </a> to obtain data for covid-19.</br>
+                For automobile accidents we used freely available dataset from <a href="https://www.kaggle.com/sobhanmoosavi/us-accidents" target="_blank">Kaggle </a> which was maintained by data scientiests from Lyft.
+                <a href="https://aspm.faa.gov/opsnet/sys/Airport.asp" target="_blank">FAA's airport operation report generator </a> and <a href="https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/" target="_blank">ndfc facility generator</a> came handy to find out daily domestic flight in each of US airport.
+                Finally, we used <a href="https://www.google.com/covid19/mobility/" target="_blank">Google's publicly available mobility dataset</a>.
+
+                Total size of the data was around 5 GB. The data required thorough cleaning. </br> After cleaning data and reducing the size, we had around 1 million rows of data to work with.
+
+                Our algorithm followed google's mobility index. Where each weekday would be baselined using median from first 5 week of the year.
+                The percentage change from baseline would be the weekly socre.
+                Weekly socre represents the relationship between metric of calculations such as increase in mobility increased in covid-19 cases.
+
+                Regression alayisi was also done for experiment. A common hypothesis was increase in covid-19 deaths would be associated with lower accident levels. </br> 
+                We regressed accidents on COVID-19 deaths. The results did not support our hypothesis.
+                Furher experient analysis can be viewed on the dashboard
+        
+            </p>
+            </div>
+
+        <div class="team" id="teamID">
+            <h2> Meet the Team!</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Brett Durborow</b></h4> 
+                        <p>Engineer</p> 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jeewan R. Bhattrai</b></h4> 
+                        <p>Engineer</p> 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img_avatar2.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Kriti Acharya</b></h4> 
+                        <p>Engineer</p> 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img_avatar2.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Mackenzie Schaich</b></h4> 
+                        <p>Engineer</p> 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Michael Spagnolo</b></h4> 
+                        <p>Engineer</p> 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>Ribash Sharma</b></h4> 
+                        <p>Engineer</p> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class='footer'>
+            <div class="feedback" id="contactID">
+                <h3>Contact Us with Suggestions!</h3>
+                <form id='formID'>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Email">
+     
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Your Suggestions.." style="height:100px"></textarea>
+                
+                    <input class='btn' type="button" value="Send" onclick="resetForm()">
+                  </form>
+            </div>
+            <div class="copyright">
+                <div class="bottom_nav">
+                    <ul>
+                        <li><img src="img/virus-free.png"></li>
+
+                        <li> <a href="#homeID">Home</a></li>
+                        <li> <a href="#dashboardID">Dashboard</a></li>
+                        <li> <a href="#aboutID">About</a></li>
+                        <li> <a href="#teamID">Team</a></li>
+                        <li> <a href="#contactID">Contatc Us</a></li>
+
+                        <li style="pointer-events: none;">&copy; Copyright 2021 Team 165</li>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="snackbar">
+            Your Message Has Been Sent!
+
+        </div>
+
+        <script>
+		   	var divElement = document.getElementById('viz1618577464064');                    
+			var vizElement = divElement.getElementsByTagName('object')[0];                    
+			if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} 
+			else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} 
+			else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+			var scriptElement = document.createElement('script');                    
+			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);   
+
+            function resetForm() {
+                document.getElementById("formID").reset();
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
+    </body>
+</html>
