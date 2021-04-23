@@ -39,7 +39,6 @@
                             
             <div class='instr'>
                 <h4> Instruction to Use the Dashboard</h4>
-                <p> Instruction below will provide a smooth guide to operate this dashboard</p>
                 <ol>
                     <li> Situated at the center of the dashbord is the map of US</li>
                     <li> Map Navigation</li>
@@ -48,16 +47,10 @@
                                 Hover over the map to see details of each state
                             </li>
                             <li>
-                                Click on a state to see the state's county level view
-                            </li>
-                            <li>
-                                Hover over county to see details of county
+                                Click and hover on a state to see the state's county level view
                             </li>
                             <li>
                                 To reset the map or get out of current view simply click 'Go Back to US View' on top left corner
-                            </li>
-                            <li>
-                                The map has zoom/in and out properties as well
                             </li>
                         </ul>
                     <li>
@@ -111,7 +104,7 @@
 
                 </ol>
             </div>
-            <div class='tableauPlaceholder' id='viz1618577464064'>
+            <!-- <div class='tableauPlaceholder' id='viz1618577464064'>
                 <noscript>
                     <a href='#'>
                         <img alt='Country ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;62&#47;6242CovidProject&#47;Country&#47;1_rss.png' style='border: none' />
@@ -132,7 +125,32 @@
                     <param name='display_count' value='yes' />
                     <param name='language' value='en' />
                 </object>
-            </div>                     
+            </div>                      -->
+            <div class='tableau'>
+                <div class='tableauPlaceholder' id='viz1619217982623'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Country ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidProject_v8&#47;Country&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='CovidProject_v8&#47;Country' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidProject_v8&#47;Country&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en' />
+                    </object>
+                </div>   
+            </div>             
+                   
         </div>
 
         <div class="about" id="aboutID">
@@ -167,21 +185,21 @@
             <h2> Meet the Team!</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <img src="img/img_avatar.png" alt="Avatar" style="width:83%">
                     <div class="container">
                         <h4><b>Brett Durborow</b></h4> 
                         <p>Engineer</p> 
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <img src="img/img_avatar.png" alt="Avatar" style="width:83%">
                     <div class="container">
                         <h4><b>Jeewan R. Bhattrai</b></h4> 
                         <p>Engineer</p> 
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/img_avatar2.png" alt="Avatar" style="width:100%">
+                    <img src="img/img_avatar2.png" alt="Avatar" style="width:83%">
                     <div class="container">
                         <h4><b>Kriti Acharya</b></h4> 
                         <p>Engineer</p> 
@@ -253,14 +271,38 @@
         </div>
 
         <script>
-		   	var divElement = document.getElementById('viz1618577464064');                    
-			var vizElement = divElement.getElementsByTagName('object')[0];                    
-			if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} 
-			else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} 
-			else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
-			var scriptElement = document.createElement('script');                    
-			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-			vizElement.parentNode.insertBefore(scriptElement, vizElement);   
+            var divElement = document.getElementById('viz1619217982623');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height='100%';} 
+            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='100%';} 
+            else { vizElement.style.width='100%';vizElement.style.height='100%';}                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+
+// window.addEventListener('resize', resizeViz);
+
+// function resizeViz() {
+//     var viz = divElement.getElementsByTagName('object')[0];                    
+
+//     var width = document.getElementById('viz1618577464064').clientWidth;
+//     console.log(width)
+
+//     var height = document.getElementById('viz1618577464064').clientHeight;
+
+//     viz.setFrameSize(width, height);
+
+// }
+// 		   	var divElement = document.getElementById('viz1618577464064');                    
+// 			var vizElement = divElement.getElementsByTagName('object')[0];                    
+// 			if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} 
+// 			else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} 
+// 			else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+// 			var scriptElement = document.createElement('script');                    
+// 			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+// 			vizElement.parentNode.insertBefore(scriptElement, vizElement);   
+
+
 
             function resetForm() {
                 document.getElementById("formID").reset();
